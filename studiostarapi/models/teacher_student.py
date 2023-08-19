@@ -7,4 +7,4 @@ class TeacherStudent(models.Model):
   student_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name='student_relationships')
   
   class Meta:
-    unique_together = ('teacher', 'student')
+    unique_together = ('teacher_id', 'student_id')
