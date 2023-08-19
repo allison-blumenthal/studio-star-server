@@ -4,7 +4,7 @@ from django.db import models
 class User(models.Model):
 
     uid = models.CharField(max_length=100)
-    is_teacher = models.BooleanField()
+    is_teacher = models.BooleanField(default=False)
     instrument = models.CharField(max_length=50)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
