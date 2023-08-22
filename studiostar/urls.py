@@ -17,9 +17,11 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from studiostarapi.views import check_user, register_user
+from studiostarapi.views import check_user, register_user, UserView
 
 router = routers.DefaultRouter(trailing_slash=False)
+
+router.register(r'users', UserView, 'user')
 
 
 urlpatterns = [
