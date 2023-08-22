@@ -17,12 +17,13 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from studiostarapi.views import check_user, register_user, UserView, TeacherStudentView
+from studiostarapi.views import check_user, register_user, UserView, TeacherStudentView, AssignmentView
 
 router = routers.DefaultRouter(trailing_slash=False)
 
 router.register(r'users', UserView, 'user')
 router.register(r'teacherstudents', TeacherStudentView, 'teacherstudent')
+router.register(r'assignments', AssignmentView, 'assignment')
 
 
 urlpatterns = [
