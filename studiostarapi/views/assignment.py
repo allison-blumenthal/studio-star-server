@@ -73,6 +73,11 @@ class AssignmentView(ViewSet):
     assignment.save()
     
     return Response(None, status=status.HTTP_204_NO_CONTENT)
+  
+  def destroy(self, request, pk):
+      assignment = Assignment.objects.get(pk=pk)
+      assignment.delete()
+      return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 
 class AssignmentSerializer(serializers.ModelSerializer):
