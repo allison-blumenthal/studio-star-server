@@ -76,7 +76,7 @@ class TaskView(ViewSet):
     task.title=request.data["title"]
     task.description=request.data["description"]
     task.sticker_goal=request.data["stickerGoal"]
-    task.current_stickers=request.data["currentStickers"],
+    task.current_stickers=request.data["currentStickers"]
     task.is_completed=request.data["isCompleted"]
     
     task.save()
@@ -94,5 +94,5 @@ class TaskSerializer(serializers.ModelSerializer):
   
   class Meta:
       model = Task
-      fields = ('id', 'assignment_id', 'title', 'desicription', 'sticker_goal', 'current_stickers', 'is_completed')
+      fields = ('id', 'assignment_id', 'title', 'description', 'sticker_goal', 'current_stickers', 'is_completed')
       depth = 1
