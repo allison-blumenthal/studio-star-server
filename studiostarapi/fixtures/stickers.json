@@ -1,0 +1,37 @@
+[
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 1,
+    "fields": {
+      "unicode": "U+1F600"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 2,
+    "fields": {
+      "unicode": "U+1F602"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 3,
+    "fields": {
+      "unicode": "U+1F60D"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 4,
+    "fields": {
+      "unicode": "U+1F605"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 5,
+    "fields": {
+      "unicode": "U+1F929"
+    }
+  }
+]
