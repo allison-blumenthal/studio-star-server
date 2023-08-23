@@ -73,4 +73,4 @@ class TaskStickerSerializer(serializers.ModelSerializer):
   class Meta:
       model = TaskSticker
       fields = ('id', 'task_id', 'sticker_id')
-      depth = 2
+      depth = 1
