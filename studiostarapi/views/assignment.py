@@ -65,11 +65,12 @@ class AssignmentView(ViewSet):
     """
     
     assignment = Assignment.objects.get(pk=pk)
-    assignment.date = request.data["date"]
     
-    student_id = User.objects.get(pk=request.data["studentId"])
-    assignment.student_id = student_id
+    student_id=User.objects.get(pk=request.data["studentId"])
+    assignment.student_id=student_id
     
+    assignment.date=request.data["date"]
+  
     assignment.save()
     
     return Response(None, status=status.HTTP_204_NO_CONTENT)
