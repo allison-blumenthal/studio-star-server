@@ -3,35 +3,35 @@
     "model": "studiostarapi.sticker",
     "pk": 1,
     "fields": {
-      "unicode": "\u1F604"
+      "unicode": "U+1F600"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 2,
     "fields": {
-      "unicode": "\u1F60D"
+      "unicode": "U+1F602"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 3,
     "fields": {
-      "unicode": "\u1F609"
+      "unicode": "U+1F60D"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 4,
     "fields": {
-      "unicode": "\u1F680"
+      "unicode": "U+1F605"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 5,
     "fields": {
-      "unicode": "\u1F914"
+      "unicode": "U+1F929"
     }
   }
 ]
