@@ -17,7 +17,7 @@ from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
-from studiostarapi.views import check_user, register_user, UserView, TeacherStudentView, AssignmentView, TaskView, StickerView
+from studiostarapi.views import check_user, register_user, UserView, TeacherStudentView, AssignmentView, TaskView, StickerView, TaskStickerView
 
 router = routers.DefaultRouter(trailing_slash=False)
 
@@ -26,6 +26,7 @@ router.register(r'teacherstudents', TeacherStudentView, 'teacherstudent')
 router.register(r'assignments', AssignmentView, 'assignment')
 router.register(r'tasks', TaskView, 'task')
 router.register(r'stickers', StickerView, 'sticker')
+router.register(r'taskstickers', TaskStickerView, 'tasksticker')
 
 
 urlpatterns = [
