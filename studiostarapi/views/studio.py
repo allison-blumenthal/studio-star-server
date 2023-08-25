@@ -2,7 +2,7 @@ from django.http import HttpResponseServerError
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from studiostarapi.models import Studio, User
+from studiostarapi.models import Studio, User, StudioStudent
 
 
 class StudioView(ViewSet):
@@ -34,9 +34,18 @@ class StudioView(ViewSet):
     
     # filter to query by teacher_id
     teacher_id = request.query_params.get('teacher_id', None)
-    
     if teacher_id is not None: 
       studios = studios.filter(teacher_id_id=teacher_id)
+    
+    uid = request.META['HTTP_AUTHORIZATION']  
+    user = User.objects.get(uid=uid)
+      
+    for studio in studios:
+      # check if there is a row in the studio_students table that has the passed in student and studio
+      studio.enrolled = len(StudioStudent.objects.filter(
+        student_id_id=user,
+        studio_id_id=studio, 
+      )) > 0
       
     serializer = StudioSerializer(studios, many=True)
     return Response(serializer.data)
@@ -63,5 +72,5 @@ class StudioSerializer(serializers.ModelSerializer):
   
   class Meta:
       model = Studio
-      fields = ('id', 'teacher_id', 'name')
+      fields = ('id', 'teacher_id', 'name', 'enrolled')
       depth = 1
