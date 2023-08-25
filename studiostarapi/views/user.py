@@ -54,7 +54,7 @@ class UserSerializer(serializers.ModelSerializer):
       
       class Meta:
         model = User
-        fields = ('id', 'uid', 'is_teacher', 'instrument', 'first_name', 'last_name', 'pronouns', 'birthdate', 'guardian_names', 'email',  'profile_image_url')
+        fields = ('id', 'uid', 'is_teacher', 'instrument', 'first_name', 'last_name', 'pronouns', 'birthdate', 'guardian_names', 'email',  'profile_image_url', 'enrolled')
         depth = 1
           
     

@@ -15,9 +15,9 @@ class User(models.Model):
     profile_image_url = models.CharField(max_length=5000)
     
     @property
-    def enroll(self):
+    def enrolled(self):
             return self.__chosen
     
-    @enroll.setter
-    def enroll(self, value):
+    @enrolled.setter
+    def enrolled(self, value):
             self.__chosen = value
