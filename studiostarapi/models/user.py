@@ -14,3 +14,10 @@ class User(models.Model):
     email = models.CharField(max_length=100)
     profile_image_url = models.CharField(max_length=5000)
     
+    @property
+    def enroll(self):
+            return self.__chosen
+    
+    @enroll.setter
+    def enroll(self, value):
+            self.__chosen = value
