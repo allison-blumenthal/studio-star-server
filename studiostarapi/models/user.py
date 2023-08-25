@@ -13,11 +13,3 @@ class User(models.Model):
     guardian_names = models.CharField(max_length=300, null=True)
     email = models.CharField(max_length=100)
     profile_image_url = models.CharField(max_length=5000)
-    
-    @property
-    def enrolled(self):
-            return self.__chosen
-    
-    @enrolled.setter
-    def enrolled(self, value):
-            self.__chosen = value
