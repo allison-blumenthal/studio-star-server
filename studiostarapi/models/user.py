@@ -13,4 +13,3 @@ class User(models.Model):
     guardian_names = models.CharField(max_length=300, null=True)
     email = models.CharField(max_length=100)
     profile_image_url = models.CharField(max_length=5000)
-    
