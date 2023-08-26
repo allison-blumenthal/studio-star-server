@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from studiostarapi.models import Studio, User, StudioStudent
+from rest_framework.decorators import action
 
 
 class StudioView(ViewSet):
@@ -16,10 +17,8 @@ class StudioView(ViewSet):
     """
     try:
       studio = Studio.objects.get(pk=pk)
-      
       serializer = StudioSerializer(studio)
       return Response(serializer.data, status=status.HTTP_200_OK)
-    
     except Studio.DoesNotExist as ex:
         return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
       
@@ -65,6 +64,34 @@ class StudioView(ViewSet):
     )
     serializer = StudioSerializer(studio)
     return Response(serializer.data, status=status.HTTP_201_CREATED)
+  
+  # allow student to enroll in a studio
+  @action(methods=['post'], detail=True)
+  def enroll(self, request, pk):
+    """Post request for a student to enroll in a studio"""
+    
+    student = User.objects.get(uid=request.META['HTTP_AUTHORIZATION'])
+    studio = Studio.objects.get(pk=pk)
+    studio_student = StudioStudent.objects.create(
+      student_id=student,
+      studio_id=studio
+    )
+    return Response({'message': 'Student enrolled'}, status=status.HTTP_201_CREATED)
+  
+  # allow student to unenroll from a studio
+  @action(methods=['delete'], detail=True)
+  def unenroll(self, request, pk):
+    """Delete request for a student to unenroll from a studio"""
+    
+    student = User.objects.get(uid=request.META['HTTP_AUTHORIZATION'])
+    studio = Studio.objects.get(pk=pk)
+    studio_student = StudioStudent.objects.get(
+      studio_id_id=studio.id,
+      student_id_id=student.id
+    )
+    studio_student.delete()
+    return Response(None, status=status.HTTP_204_NO_CONTENT)
+    
 
 
 class StudioSerializer(serializers.ModelSerializer):
