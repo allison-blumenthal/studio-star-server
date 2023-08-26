@@ -33,7 +33,13 @@ class StudioStudentView(ViewSet):
       Response -- JSON serialized list of studio_students
     """
     
-    studio_students = StudioStudent.objects.all()   
+    studio_students = StudioStudent.objects.all()
+    
+    # filter to query studio_students by studio_id
+    studio_id = request.query_params.get('studio_id', None)
+    if studio_id is not None:
+      studio_students = studio_students.filter(studio_id_id=studio_id)
+         
     serializer = StudioStudentSerializer(studio_students, many=True)
     return Response(serializer.data)
 
