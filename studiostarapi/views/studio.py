@@ -56,7 +56,7 @@ class StudioView(ViewSet):
         Response -- JSON serialized studio instance
     """
     
-    teacher_id = User.objects.get(pk=request.data["teacherId"])
+    teacher_id = User.objects.get(uid=request.META['HTTP_AUTHORIZATION'])
     
     studio = Studio.objects.create(
       teacher_id=teacher_id,
