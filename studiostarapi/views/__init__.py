@@ -5,3 +5,4 @@ from .task import TaskView
 from .sticker import StickerView
 from .task_sticker import TaskStickerView
 from .studio import StudioView
+from .studio_student import StudioStudentView
