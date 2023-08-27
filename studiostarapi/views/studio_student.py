@@ -49,4 +49,4 @@ class StudioStudentSerializer(serializers.ModelSerializer):
   class Meta:
       model = StudioStudent
       fields = ('id', 'student_id', 'studio_id')
-      depth = 0
+      depth = 1
