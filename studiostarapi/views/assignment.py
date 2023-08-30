@@ -38,6 +38,13 @@ class AssignmentView(ViewSet):
     if student_id is not None: 
       assignments = assignments.filter(student_id_id=student_id)
       
+      # filter to query by task_id
+    task_id = request.query_params.get('task_id', None)
+    
+    if task_id is not None:
+      assignments = Assignment.objects.filter(task__id=task_id)
+    
+      
     serializer = AssignmentSerializer(assignments, many=True)
     return Response(serializer.data)
   
