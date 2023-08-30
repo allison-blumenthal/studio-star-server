@@ -15,17 +15,13 @@ class UserView(ViewSet):
       Response -- JSON serialized list of users
     """
     
-    # get all users 
-    users = User.objects.all()
-    
-    # Establish the query parameter of uid and 
-    # use the .get method to retrieve the object with matching 
-    # uid value. If no user is found, an exception is raised.
-    uid = request.query_params.get('uid')
-    
-    # if the uid exists, filter the list of users by the uid
-    if uid:
-        users = users.filter(uid=uid)
+    # filter to query by assignment_id
+    assignment_id = request.query_params.get('assignment_id', None)
+   
+    if assignment_id is not None:
+     users = User.objects.filter(assignment__id=assignment_id)
+    else:
+      users = User.objects.all()
     
     # serialize any matching instances
     serializer = UserSerializer(users, many=True)
