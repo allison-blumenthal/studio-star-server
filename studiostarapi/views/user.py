@@ -7,6 +7,21 @@ from studiostarapi.models import User
 
 class UserView(ViewSet):
   """Studio Star API User View"""
+  
+  def retrieve(self, request, pk):
+    """Handle GET request for a single user
+    
+    Returns -- JSON serialized user object
+    """
+  
+    try:
+        user = User.objects.get(pk=pk)
+        
+        serializer = UserSerializer(user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+      
+    except User.DoesNotExist as ex:
+      return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND) 
 
   def list(self, request):
     """Handle GET requests for users
@@ -28,20 +43,7 @@ class UserView(ViewSet):
     return Response(serializer.data)
   
   
-  def retrieve(self, request, pk):
-    """Handle GET request for a single user
-    
-    Returns -- JSON serialized user object
-    """
-    
-    try:
-        user = User.objects.get(pk=pk)
-        
-        serializer = UserSerializer(user)
-        return Response(serializer.data, status=status.HTTP_200_OK)
-      
-    except User.DoesNotExist as ex:
-      return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND) 
+
     
       
 
