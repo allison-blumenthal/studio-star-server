@@ -67,21 +67,23 @@ class TaskView(ViewSet):
     Returns:
         Response -- Empty body with 204 status code
     """
-    
-    task = Task.objects.get(pk=pk)
-    
-    assignment_id = Assignment.objects.get(pk=request.data["assignmentId"])
-    task.assignment_id=assignment_id
-    
-    task.title=request.data["title"]
-    task.description=request.data["description"]
-    task.sticker_goal=request.data["stickerGoal"]
-    task.current_stickers=request.data["currentStickers"]
-    task.is_completed=request.data["isCompleted"]
-    
-    task.save()
-    
-    return Response(None, status=status.HTTP_204_NO_CONTENT)
+    try:
+      task = Task.objects.get(pk=pk)
+      
+      assignment_id = Assignment.objects.get(pk=request.data["assignmentId"])
+      task.assignment_id=assignment_id
+      
+      task.title=request.data["title"]
+      task.description=request.data["description"]
+      task.sticker_goal=request.data["stickerGoal"]
+      task.current_stickers=request.data["currentStickers"]
+      task.is_completed = task.current_stickers >= task.sticker_goal
+      
+      task.save()
+      
+      return Response(None, status=status.HTTP_204_NO_CONTENT)
+    except Task.DoesNotExist as ex:
+            return Response({'message': ex.args[0]}, status=status.HTTP_404_NOT_FOUND)
   
   def destroy(self, request, pk):
       task = Task.objects.get(pk=pk)
