@@ -61,19 +61,21 @@ class TaskStickerView(ViewSet):
         serializer = TaskStickerSerializer(task_sticker)
         
         # update the associated task's current_stickers field 
-        task_id.update_current_stickers()
+        task_sticker.update_task_current_stickers()
         
         return Response(serializer.data, status=status.HTTP_201_CREATED)
     
     def destroy(self, request, pk):
-      task_sticker = TaskSticker.objects.get(pk=pk)
-      task_id = task_sticker.task_id
-      task_sticker.delete()
-      
-      # update the associated task's current_stickers field
-      task_id.update_current_stickers()
-      
-      return Response(None, status=status.HTTP_204_NO_CONTENT)
+        try:
+            task_sticker = TaskSticker.objects.get(pk=pk)
+            task_sticker.delete()
+            
+            # update the associated task's current_stickers field
+            task_sticker.update_task_current_stickers()
+            
+            return Response(None, status=status.HTTP_204_NO_CONTENT)
+        except TaskSticker.DoesNotExist:
+            return Response({'message': 'TaskSticker not found'}, status=status.HTTP_404_NOT_FOUND)
       
 
 class TaskStickerSerializer(serializers.ModelSerializer):
