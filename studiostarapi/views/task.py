@@ -77,7 +77,7 @@ class TaskView(ViewSet):
       task.description=request.data["description"]
       task.sticker_goal=request.data["stickerGoal"]
       task.current_stickers=request.data["currentStickers"]
-      task.is_completed = task.current_stickers >= task.sticker_goal
+      task.is_completed=request.data["isCompleted"]
       
       task.save()
       
