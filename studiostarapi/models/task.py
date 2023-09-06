@@ -7,5 +7,5 @@ class Task(models.Model):
   title = models.CharField(max_length=200)
   description = models.TextField()
   sticker_goal = models.IntegerField()
-  current_stickers = models.IntegerField()
+  current_stickers = models.IntegerField(default=0)
   is_completed = models.BooleanField(default=False)
