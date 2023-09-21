@@ -1,0 +1,18 @@
+[
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 1,
+    "fields": {
+      "student_id": 4,
+      "studio_id": 3
+    }
+  },
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 2,
+    "fields": {
+      "student_id": 5,
+      "studio_id": 2
+    }
+  }
+]
