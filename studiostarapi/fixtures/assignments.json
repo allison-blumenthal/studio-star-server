@@ -3,7 +3,7 @@
     "model": "studiostarapi.assignment",
     "pk": 1,
     "fields": {
-      "student_id": 2,
+      "student_id": 4,
       "date": "2023-08-01"
     }
   },
@@ -11,7 +11,7 @@
     "model": "studiostarapi.assignment",
     "pk": 2,
     "fields": {
-      "student_id": 2,
+      "student_id": 4,
       "date": "2023-08-08"
     }
   },
@@ -19,7 +19,7 @@
     "model": "studiostarapi.assignment",
     "pk": 3,
     "fields": {
-      "student_id": 2,
+      "student_id": 4,
       "date": "2023-08-15"
     }
   },
@@ -27,16 +27,24 @@
     "model": "studiostarapi.assignment",
     "pk": 4,
     "fields": {
-      "student_id": 2,
-      "date": "2023-08-22"
+      "student_id": 5,
+      "date": "2023-08-03"
     }
   },
   {
     "model": "studiostarapi.assignment",
     "pk": 5,
     "fields": {
-      "student_id": 2,
-      "date": "2023-08-28"
+      "student_id": 5,
+      "date": "2023-08-10"
+    }
+  },
+  {
+    "model": "studiostarapi.assignment",
+    "pk": 6,
+    "fields": {
+      "student_id": 5,
+      "date": "2023-08-17"
     }
   }
 ]

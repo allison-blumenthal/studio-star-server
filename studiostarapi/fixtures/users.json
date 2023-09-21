@@ -8,11 +8,75 @@
       "instrument": "Piano",
       "first_name": "Allison",
       "last_name": "Blumenthal",
-      "pronouns": "she/her/hers",
-      "birthdate": "1989-01-02",
-      "guardian_names": "n/a",
+      "pronouns": "she/her",
+      "birthdate": null,
+      "guardian_names": null,
       "email": "blumen.allison@gmail.com",
-      "profile_image_url": "https://media.istockphoto.com/id/1370010790/photo/pit-bull-dog-playing-and-having-fun-in-the-park-green-grass-wooden-stakes-around-selective.jpg?s=612x612&w=0&k=20&c=2BhKHzjGSTauuMVtrjEx6aDQrACAPV7iZ2ExQtxArzs="
+      "profile_image_url": "https://community.codenewbie.org/images/Frnvrfo3pxOcL31UYZRsJh-b_Y_rdyRO_JhfGgk6YLw/rs:fill:320:320/mb:500000/ar:1/aHR0cHM6Ly9jb21t/dW5pdHkuY29kZW5l/d2JpZS5vcmcvcmVt/b3RlaW1hZ2VzL3Vw/bG9hZHMvdXNlci9w/cm9maWxlX2ltYWdl/Lzk4NDkvMzkxYzJm/ZGYtODlkMi00ODEx/LThkNjQtZmZlZThi/ZWI1NmFjLmpwZw"
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 2,
+    "fields": {
+      "uid": "WIutREw6ukamBEK8rRrnXRsY3e72",
+      "is_teacher": true,
+      "instrument": "Bass",
+      "first_name": "Victor",
+      "last_name": "Wooten",
+      "pronouns": "he/him",
+      "birthdate": null,
+      "guardian_names": null,
+      "email": "victor@wooten.com",
+      "profile_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Victor_Wooten.jpg"
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 3,
+    "fields": {
+      "uid": "IPVum9WcGDVt51KKxugYoQMEXlj1",
+      "is_teacher": true,
+      "instrument": "Cello",
+      "first_name": "Yo-Yo",
+      "last_name": "Ma",
+      "pronouns": "he/him",
+      "birthdate": null,
+      "guardian_names": null,
+      "email": "yo-yo@ma.com",
+      "profile_image_url": "https://cdn.britannica.com/66/118366-050-8027F1FD/Yo-Yo-Ma.jpg"
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 4,
+    "fields": {
+      "uid": "Co2ZeUgkL0YLd1l5c4VpAQsVa7C3",
+      "is_teacher": false,
+      "instrument": "Cello",
+      "first_name": "Ava",
+      "last_name": "Smith",
+      "pronouns": "she/her",
+      "birthdate": "2013-01-01",
+      "guardian_names": "Mr. and Mrs. Smith",
+      "email": "smith-house@gmail.com",
+      "profile_image_url": "https://images.pexels.com/photos/8519870/pexels-photo-8519870.jpeg?cs=srgb&dl=pexels-yan-krukau-8519870.jpg&fm=jpg"
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 5,
+    "fields": {
+      "uid": "gIz8t93RERU0tW0MftIrxSDKpq23",
+      "is_teacher": false,
+      "instrument": "Bass",
+      "first_name": "Quinn",
+      "last_name": "Brown",
+      "pronouns": "they/them",
+      "birthdate": "2004-11-01",
+      "guardian_names": "Mr. and Mrs. Brown",
+      "email": "quinn@brown.com",
+      "profile_image_url": "https://64.media.tumblr.com/8feda668bd730479cec727f9813dd00c/da0df15decf3b90c-b6/s1280x1920/d5e4d0fee887ab23d84f06b84611c2d06dccb267.jpg"
     }
   }
 ]

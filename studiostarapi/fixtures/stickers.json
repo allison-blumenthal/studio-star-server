@@ -3,35 +3,210 @@
     "model": "studiostarapi.sticker",
     "pk": 1,
     "fields": {
-      "unicode": "U+1F600"
+      "unicode": "U+1F973"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 2,
     "fields": {
-      "unicode": "U+1F602"
+      "unicode": "U+1F929"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 3,
     "fields": {
-      "unicode": "U+1F60D"
+      "unicode": "U+1F92A"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 4,
     "fields": {
-      "unicode": "U+1F605"
+      "unicode": "U+1F60E"
     }
   },
   {
     "model": "studiostarapi.sticker",
     "pk": 5,
     "fields": {
-      "unicode": "U+1F929"
+      "unicode": "U+1F608"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 6,
+    "fields": {
+      "unicode": "U+1F4A9"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 7,
+    "fields": {
+      "unicode": "U+1F496"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 8,
+    "fields": {
+      "unicode": "U+1F4A5"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 9,
+    "fields": {
+      "unicode": "U+1F63A"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 10,
+    "fields": {
+      "unicode": "U+1F436"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 11,
+    "fields": {
+      "unicode": "U+1F42F"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 12,
+    "fields": {
+      "unicode": "U+1F43C"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 13,
+    "fields": {
+      "unicode": "U+1F984"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 14,
+    "fields": {
+      "unicode": "U+1F419"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 15,
+    "fields": {
+      "unicode": "U+1F41D"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 16,
+    "fields": {
+      "unicode": "U+1F98B"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 17,
+    "fields": {
+      "unicode": "U+1F34E"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 18,
+    "fields": {
+      "unicode": "U+1F951"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 19,
+    "fields": {
+      "unicode": "U+1F354"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 20,
+    "fields": {
+      "unicode": "U+1F32E"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 21,
+    "fields": {
+      "unicode": "U+1F37F"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 22,
+    "fields": {
+      "unicode": "U+1F363"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 23,
+    "fields": {
+      "unicode": "U+1F33B"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 24,
+    "fields": {
+      "unicode": "U+1F338"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 25,
+    "fields": {
+      "unicode": "U+2618"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 26,
+    "fields": {
+      "unicode": "U+1F344"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 27,
+    "fields": {
+      "unicode": "U+1F369"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 28,
+    "fields": {
+      "unicode": "U+1F382"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 29,
+    "fields": {
+      "unicode": "U+1F366"
+    }
+  },
+  {
+    "model": "studiostarapi.sticker",
+    "pk": 30,
+    "fields": {
+      "unicode": "U+2615"
     }
   }
 ]
