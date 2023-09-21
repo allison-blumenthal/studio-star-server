@@ -1,0 +1,98 @@
+[
+  {
+    "model": "studiostarapi.task",
+    "pk": 1,
+    "fields": {
+      "assignment_id": 1,
+      "title": "Bowing Exercise 1",
+      "description": "Practice picking up the bow with proper technique, placing it on the strings, and pulling it across to make a sound.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 2,
+    "fields": {
+      "assignment_id": 1,
+      "title": "Twinkle, Twinkle",
+      "description": "Practice the notes slowly, then gradually add the rhythm.",
+      "sticker_goal": 5,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 3,
+    "fields": {
+      "assignment_id": 2,
+      "title": "Bowing Exercise 2",
+      "description": "Practice the bowing exercise as outlined in the book. Use good bow distribution and weight to produce a clear tone.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 4,
+    "fields": {
+      "assignment_id": 2,
+      "title": "Lightly Row",
+      "description": "Practice the notes slowly, then gradually add the rhythm. Focus on intonation.",
+      "sticker_goal": 5,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 5,
+    "fields": {
+      "assignment_id": 3,
+      "title": "Ear Training",
+      "description": "Choose a favorite song with a prominent bass part, and work on learning how to play a small section of the melody by ear.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 6,
+    "fields": {
+      "assignment_id": 3,
+      "title": "Slap Technique Exercise",
+      "description": "Watch the tutorial video and play along to practice slap technique.",
+      "sticker_goal": 5,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 7,
+    "fields": {
+      "assignment_id": 4,
+      "title": "Another One Bites the Dust",
+      "description": "Learn the song in small sections, then put it together.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 8,
+    "fields": {
+      "assignment_id": 4,
+      "title": "2 Major Scales",
+      "description": "Choose 3 major scales of your choice to practice in 2 octaves each.",
+      "sticker_goal": 5,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  }
+]

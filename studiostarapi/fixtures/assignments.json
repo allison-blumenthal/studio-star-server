@@ -19,8 +19,8 @@
     "model": "studiostarapi.assignment",
     "pk": 3,
     "fields": {
-      "student_id": 4,
-      "date": "2023-08-15"
+      "student_id": 5,
+      "date": "2023-08-03"
     }
   },
   {
@@ -28,23 +28,7 @@
     "pk": 4,
     "fields": {
       "student_id": 5,
-      "date": "2023-08-03"
-    }
-  },
-  {
-    "model": "studiostarapi.assignment",
-    "pk": 5,
-    "fields": {
-      "student_id": 5,
       "date": "2023-08-10"
-    }
-  },
-  {
-    "model": "studiostarapi.assignment",
-    "pk": 6,
-    "fields": {
-      "student_id": 5,
-      "date": "2023-08-17"
     }
   }
 ]

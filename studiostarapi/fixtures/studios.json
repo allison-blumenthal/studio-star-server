@@ -1,0 +1,26 @@
+[
+  {
+    "model": "studiostarapi.studio",
+    "pk": 1,
+    "fields": {
+      "name": "Allison Blumenthal's Studio",
+      "teacher_id": 1
+    }
+  },
+  {
+    "model": "studiostarapi.studio",
+    "pk": 2,
+    "fields": {
+      "name": "Victor Wooten's Studio",
+      "teacher_id": 2
+    }
+  },
+  {
+    "model": "studiostarapi.studio",
+    "pk": 3,
+    "fields": {
+      "name": "Yo-Yo Ma's Studio",
+      "teacher_id": 3
+    }
+  }
+]
