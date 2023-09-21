@@ -2,6 +2,7 @@ from studiostarapi.models import User
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from datetime import date
+from studiostarapi.models import User, Studio
 
 # api_view decorator with 'POST' passed as an argument
 # indicating that this view function should handle POST requests.
@@ -70,6 +71,15 @@ def register_user(request):
     email = request.data['email'],
     profile_image_url = request.data['profileImageUrl']
   )
+  
+  # If user is a teacher, create a studio with their first and last name 
+  if user.is_teacher:
+    studio_name = f"{user.first_name} {user.last_name}'s Studio"
+    
+    studio = Studio.objects.create(
+      name=studio_name,
+      teacher_id=user
+    )
   
   # Return the user info to the client
   data = {
