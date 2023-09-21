@@ -19,7 +19,8 @@
     "model": "studiostarapi.tasksticker",
     "pk": 3,
     "fields": {
-      "task_id": 23
+      "task_id": 2,
+      "sticker_id": 3
     }
   },
   {
