@@ -1,0 +1,129 @@
+[
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 1,
+    "fields": {
+      "task_id": 1,
+      "sticker_id": 1
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 2,
+    "fields": {
+      "task_id": 1,
+      "sticker_id": 2
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 3,
+    "fields": {
+      "task_id": 23
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 4,
+    "fields": {
+      "task_id": 2,
+      "sticker_id": 4
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 5,
+    "fields": {
+      "task_id": 3,
+      "sticker_id": 5
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 6,
+    "fields": {
+      "task_id": 3,
+      "sticker_id": 6
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 7,
+    "fields": {
+      "task_id": 4,
+      "sticker_id": 7
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 8,
+    "fields": {
+      "task_id": 4,
+      "sticker_id": 8
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 9,
+    "fields": {
+      "task_id": 5,
+      "sticker_id": 9
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 10,
+    "fields": {
+      "task_id": 5,
+      "sticker_id": 10
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 11,
+    "fields": {
+      "task_id": 6,
+      "sticker_id": 11
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 12,
+    "fields": {
+      "task_id": 6,
+      "sticker_id": 12
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 13,
+    "fields": {
+      "task_id": 7,
+      "sticker_id": 13
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 14,
+    "fields": {
+      "task_id": 7,
+      "sticker_id": 14
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 15,
+    "fields": {
+      "task_id": 8,
+      "sticker_id": 15
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 16,
+    "fields": {
+      "task_id": 8,
+      "sticker_id": 16
+    }
+  }
+]
