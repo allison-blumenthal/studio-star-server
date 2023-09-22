@@ -1,1 +1,1 @@
-DELETE from studiostarapi_studio WHERE id > 4;
+DELETE from studiostarapi_studio WHERE id = 14;
