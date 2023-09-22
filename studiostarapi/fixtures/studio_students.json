@@ -14,5 +14,37 @@
       "student_id": 5,
       "studio_id": 2
     }
+  },
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 3,
+    "fields": {
+      "student_id": 6,
+      "studio_id": 1
+    }
+  },
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 4,
+    "fields": {
+      "student_id": 7,
+      "studio_id": 1
+    }
+  },
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 5,
+    "fields": {
+      "student_id": 8,
+      "studio_id": 1
+    }
+  },
+  {
+    "model": "studiostarapi.studiostudent",
+    "pk": 6,
+    "fields": {
+      "student_id": 9,
+      "studio_id": 1
+    }
   }
 ]

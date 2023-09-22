@@ -94,5 +94,53 @@
       "current_stickers": 0,
       "is_completed": false
     }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 9,
+    "fields": {
+      "assignment_id": 5,
+      "title": "On Eagle's Wings",
+      "description": "Practice each section separately. Work on hands separately to build confidence, then put together slowly",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 10,
+    "fields": {
+      "assignment_id": 6,
+      "title": "When We Were Young",
+      "description": "Focus on new section and getting more comfortable with rhythms and tempo.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 11,
+    "fields": {
+      "assignment_id": 7,
+      "title": "Desierto de la Atacama",
+      "description": "Continue memorizing and polishing the flow of the piece.",
+      "sticker_goal": 4,
+      "current_stickers": 0,
+      "is_completed": false
+    }
+  },
+  {
+    "model": "studiostarapi.task",
+    "pk": 12,
+    "fields": {
+      "assignment_id": 8,
+      "title": "Little March",
+      "description": "Focus on slow and steady practice until confident, then increase the tempo.",
+      "sticker_goal": 5,
+      "current_stickers": 0,
+      "is_completed": false
+    }
   }
 ]
