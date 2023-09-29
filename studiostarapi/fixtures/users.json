@@ -78,5 +78,69 @@
       "email": "quinn@brown.com",
       "profile_image_url": "https://64.media.tumblr.com/8feda668bd730479cec727f9813dd00c/da0df15decf3b90c-b6/s1280x1920/d5e4d0fee887ab23d84f06b84611c2d06dccb267.jpg"
     }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 6,
+    "fields": {
+      "uid": "staceyUid",
+      "is_teacher": false,
+      "instrument": "Piano",
+      "first_name": "Stacey",
+      "last_name": "Thomas",
+      "pronouns": "she/her",
+      "birthdate": "1978-10-01",
+      "guardian_names": "n/a",
+      "email": "stacey@thomas.com",
+      "profile_image_url": "https://www.si.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cq_auto:good%2Cw_1200/MTk2MzY2NjM4OTQ0MTAyMDM0/best-hiking-shoes_hero.png"
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 7,
+    "fields": {
+      "uid": "peytonUid",
+      "is_teacher": false,
+      "instrument": "Piano",
+      "first_name": "Peyton",
+      "last_name": "Thomas",
+      "pronouns": "she/her",
+      "birthdate": "2007-08-01",
+      "guardian_names": "Stacey and David Thomas",
+      "email": "stacey@thomas.com",
+      "profile_image_url": "https://media.istockphoto.com/id/1290541032/photo/smiling-young-girl-gardener-with-garden-shovel-picking-green-onion.jpg?s=612x612&w=0&k=20&c=rdKXjgDyFAnFE4IFUeqnRzrbXSIsZMUrbJIO0zgm3uQ="
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 8,
+    "fields": {
+      "uid": "andieUid",
+      "is_teacher": false,
+      "instrument": "Piano",
+      "first_name": "Andie",
+      "last_name": "Thomas",
+      "pronouns": "she/her",
+      "birthdate": "2009-06-01",
+      "guardian_names": "Stacey and David Thomas",
+      "email": "stacey@thomas.com",
+      "profile_image_url": "https://media.istockphoto.com/id/1342229939/photo/cheerful-afro-american-girl-holding-soccer-ball-on-yellow.jpg?s=612x612&w=0&k=20&c=Q4RUFlk8iSE5jMgvZcqTEV6ZlG0FJZCUDX-p_ynHe08="
+    }
+  },
+  {
+    "model": "studiostarapi.user",
+    "pk": 9,
+    "fields": {
+      "uid": "hayesUid",
+      "is_teacher": false,
+      "instrument": "Piano",
+      "first_name": "Hayes",
+      "last_name": "Thomas",
+      "pronouns": "he/him",
+      "birthdate": "2011-04-01",
+      "guardian_names": "Stacey and David Thomas",
+      "email": "stacey@thomas.com",
+      "profile_image_url": "https://i.pinimg.com/originals/24/ab/8a/24ab8af10ea956ab66b895af83bce510.jpg"
+    }
   }
 ]

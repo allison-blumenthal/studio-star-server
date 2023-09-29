@@ -126,5 +126,77 @@
       "task_id": 8,
       "sticker_id": 16
     }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 17,
+    "fields": {
+      "task_id": 9,
+      "sticker_id": 17
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 18,
+    "fields": {
+      "task_id": 9,
+      "sticker_id": 18
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 19,
+    "fields": {
+      "task_id": 10,
+      "sticker_id": 19
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 20,
+    "fields": {
+      "task_id": 10,
+      "sticker_id": 20
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 21,
+    "fields": {
+      "task_id": 11,
+      "sticker_id": 21
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 22,
+    "fields": {
+      "task_id": 11,
+      "sticker_id": 22
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 23,
+    "fields": {
+      "task_id": 12,
+      "sticker_id": 23
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 24,
+    "fields": {
+      "task_id": 12,
+      "sticker_id": 24
+    }
+  },
+  {
+    "model": "studiostarapi.tasksticker",
+    "pk": 25,
+    "fields": {
+      "task_id": 12,
+      "sticker_id": 25
+    }
   }
 ]
